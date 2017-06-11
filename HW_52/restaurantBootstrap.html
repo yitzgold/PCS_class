@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <title>Document</title>
+    <style> 
+        .container{
+        text-align: center;
+        color: red;
+        size: 100%;
+        border: 20px ridge #3380FF;
+        border-radius: 10px;
+        background-image: url(images/wood2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px;
+        /*overflow: visible;*/
+        }
+        h1{
+        font-size: 80px;
+        padding-bottom: 30px;
+        }
+        .menuImage{
+		width: 200px;
+		height: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+	    }
+        #logo{
+        width: 450px;
+        height: 300px;
+        padding-bottom: 50px;
+	    }
+        a{
+		font-size: 30px;
+		color :blue;
+		text-decoration: none;	
+	    }
+        .padding{
+            padding: 30px;
+        }
+    
+    </style>
+</head>
+<body>
+   <div class="container">
+        
+        <h1> YITZI'S RESTAURANT</h1>
+        <div class="col-lg-12">
+        <img id="logo" src="images/restPic.jpeg" alt="restaurant">
+        </div>
+        <div class="row padding">
+            <div class="col-md-3 col-sm-12">
+                <img class="menuImage" src="images/noodleSoup.png" alt="noodle soup">
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <img class="menuImage" src="images/steak.jpg" alt="steak">
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <img class="menuImage" src="images/salmon.png" alt="salmon">
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <img class="menuImage" id="wine" src="images/wine.png" alt="wine">
+            </div>
+            <div class="clearfix visible-md-block"></div>
+        </div>
+        <div class="row padding">
+            <div class="col-md-6 col-sm-12">
+               <a href="menu.html" class="aTab">view our menu</a>
+            </div>
+            <div class="col-md-6 col-sm-12">
+               <a href="reservationForm.html" class="aTab">make a reservation</a>
+            </div>
+        </div>
+        <form class="form-inline padding">
+            <h3>Log in to our site to get great deals</h3>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" nmae="name">
+            </div>
+            <div class="form-group">
+                <label for="password">password</label>
+                <input type="password" class="form-control" name="password">
+            </div>
+            <button type="submit" class="btn btn-danger">LOG IN <span class="glyphicon glyphicon-user"></span></button>
+        </form>
+   </div>       
+</body>
+</html>
+
