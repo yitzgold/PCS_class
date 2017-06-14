@@ -1,0 +1,177 @@
+*{
+		box-sizing: border-box;
+	}
+html{
+		background-color: #41f4c1;
+	}
+body{
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 10px;
+		border: 20px ridge #3380FF;
+		border-radius: 10px;
+		box-shadow: 10px;
+		background-image: url(images/wood2.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		overflow: visible;
+	
+	}
+.fixed{ 
+		background-image: url(images/favicon.png);
+		background-repeat: no-repeat;
+		width: 100px;
+		height: 100px;
+        position: fixed;
+	}
+header{
+		text-align:center;		
+	}
+h1{
+		color:blue;
+		font-size: 100px;
+	}
+h2{
+		color:green;
+		font-size: 42px;
+		text-align: center;
+		clear: both;
+		
+	}	
+#logo{
+		width:400px;
+		height:200px;
+	}	
+#address{
+		text-align: center;
+		letter-spacing: 5px;
+		line-height: 1.2;
+		text-transform: capitalize;
+		color: yellow;
+		text-shadow: 3px 2px 4px green;
+	}	
+#menu{
+		text-align:center;
+		font-size: 60px;
+		color:blue;
+    }
+.padding{
+		padding-top: 55px;
+	}
+@media screen and (max-width: 300px) {
+		nav{
+			width: 50px ;
+			margin-left: auto ;
+			margin-right: auto ;
+		}
+	}	
+ul{ 
+		list-style-image: url(images/arrow.png);
+	}
+a{
+		font-size: 20px;
+		color:#DAFF33;
+	}
+.menuImage{
+		width: 200px;
+		height: 200px;
+		
+	}
+.menuItem{
+		/* display: inline-block; */
+		width: 200px;
+		height: 270px;
+		font-size: 28px;
+		margin-left: 20px;
+		margin-right: 20px;
+		float: left;
+		text-align: center;
+		color:#DAFF33;
+	}
+.aTab{
+		display: block;
+		text-align: center;
+		font-size: 20px;
+		color :blue;
+		text-decoration: none;	
+	}
+#outer{
+		overflow: hidden;
+	}
+video{
+        width: 800px;
+		height: 250px;
+    }
+form::first-line {
+		color: brown;
+		font-size: 40px;
+}
+button{
+		font-size: 24px;
+		font-weight: bold;
+		color:darkcyan;
+		background-image: url(images/favicon.png);
+	    height: 101px;
+        width: 103px;
+		border: none;
+		cursor: pointer;
+}
+/*input ~ .label{
+		color: blue;
+}
+label:not(.exeption) {
+		color: green;
+}
+p +.label{
+		color: red;
+}*/
+/*label{
+	padding-bottom: 20px;
+	display: block;
+}*/
+label{
+		font-size: 20px;
+		color: deeppink;
+}
+input{
+		border: 3px solid lightgreen;
+}
+.inptLine{
+		margin: 10px;
+}
+#button{
+		text-align: center;	
+}
+ table{
+        margin: 0 auto;
+        border-collapse: collapse;
+		text-align: right;
+		background-color: white; 
+    } 
+    th, td{
+        border: 1px solid black;
+    }
+    tbody tr:nth-child(odd){
+
+        background-color: lightblue;
+    }
+    tbody tr:hover, tfoot tr:hover{
+        background-color: pink;
+    }
+    .rowHead{
+        text-align: left;
+        font-weight: bold;
+    	color:blue;
+    }
+    th{
+        font-weight: bold;
+        color:crimson;
+    }
+	caption{
+		text-align: center;
+		color:darkblue;
+		font-size: 30px;
+	}
+
+		
+	    
