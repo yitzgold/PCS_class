@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>PCS JavaScript</h1>
+    <div>
+        <label>type the message you want displayed</label>
+        <input id="messageInput">
+        <label>make this message modal</label>
+        <input type="checkbox" id="modalCheckbox">
+        <button id="messageButton">display message</button>
+    </div>
+    <p>
+        rerum sapiente cum magni sed modi, voluptate rem adipisci explicabo ipsam mollitia iusto praesentium id. Libero ipsum sit
+        earum dolore natus quae repellat excepturi nulla sapiente facilis accusantium nihil autem quisquam blanditiis, fuga
+        adipisci cumque laudantium optio perspiciatis similique!
+    </p>
+
+    <script src="messagebox.js"></script>
+    <script>
+        document.getElementById("messageButton").addEventListener("click", function () {
+            var message = document.getElementById("messageInput").value;
+            var messagebox = pcs.messagebox.show(message);
+        });
+
+        function hi() {
+            console.log("hi");
+        }
+
+        var buttons = ["button1", "button2", "button3", "button4"];
+
+        pcs.messagebox.show("message here", buttons, hi);
+    </script>
+</body>
+
+</html>
