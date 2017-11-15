@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="hide_showText">PRESS THE BUTTON TO HIDE AND SHOW ME</h1>
+
+    <button id="hide_showButton">hide</button>
+
+    <script src="tools.js"></script>
+    <script>
+        var hide_showText = pcs.tools.wrap("hide_showText");
+        var hide_showButton = pcs.tools.wrap("hide_showButton");
+
+        hide_showButton.click(function () {
+            if (getComputedStyle(document.getElementById("hide_showText")).getPropertyValue('display') === "none") {
+                hide_showText.show().pulsate();
+                hide_showButton.elemText("hide");
+            } else {
+                hide_showText.hide();
+                hide_showButton.elemText("show");
+            }
+        });
+    </script>
+</body>
+
+</html>
