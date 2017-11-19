@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="hide_showText">PRESS THE BUTTON TO HIDE AND SHOW ME</h1>
+    <h2 id="dataTest">log my click count</h2>
+    <button id="hide_showButton">hide</button>
+
+    <script src="tools_84.js"></script>
+    <script>
+        var hide_showText = pcs("hide_showText");
+        var hide_showButton = pcs("hide_showButton");
+
+        hide_showButton.click(function () {
+            if (hide_showText.css('display') === "none") {
+                hide_showText.show().pulsate();
+                hide_showButton.elemText("hide");
+            } else {
+                hide_showText.hide();
+                hide_showButton.elemText("show");
+            }
+
+            if (hide_showButton.data()) {
+                hide_showButton.data(hide_showButton.data() + 1);
+            } else {
+                hide_showButton.data(1);
+            }
+            console.log("hide_showButton ", hide_showButton.data());
+        });
+
+        var dataTest1 = pcs("dataTest").click(function () {
+            if (dataTest1.data()) {
+                dataTest1.data(dataTest1.data() + 1);
+            } else {
+                dataTest1.data(1);
+            }
+            console.log("dataTest1 ", dataTest1.data());
+        });
+        var dataTest2 = pcs("dataTest").mouseenter(function () {
+            if (dataTest2.data()) {
+                dataTest2.data(dataTest2.data() + 1);
+            } else {
+                dataTest2.data(1);
+            }
+            console.log("dataTest2 ", dataTest2.data());
+        });
+    </script>
+</body>
+
+</html>
