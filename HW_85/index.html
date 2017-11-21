@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .spinner {
+            border: 8px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 8px solid #3498db;
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
+            animation: spin 2s linear infinite;
+            display: none;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label>enter a file to load</label>
+        <input id="file">
+        <button id="button">load</button>
+    </div>
+
+    <div class="spinner"></div>
+
+    <div id="loadDiv"></div>
+
+    <script src="/jquery-1.12.4.min.js"></script>
+    <script src="ajax_85.js"></script>
+    <script src="messageBox.js"></script>
+</body>
+
+</html>
