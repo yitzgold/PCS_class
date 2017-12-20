@@ -1,0 +1,12 @@
+[
+    {
+        "title": "ocean",
+        "poster": "images/ocean.jpg",
+        "url": "videos/video1.mp4"
+    },
+    {
+        "title": "bird",
+        "poster": "images/bird.jpeg",
+        "url": "videos/video2.mp4"
+    }
+]

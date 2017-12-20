@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+        }
+
+        #titlesDiv {
+            width: 25%;
+        }
+
+        #videoDisplay {
+            width: 75%;
+            padding-left: 50px;
+            padding-right: 10px;
+        }
+
+        figure {
+            float: left;
+        }
+
+        figcaption {
+            padding: 25% 0;
+            float: left;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        #video {
+            background-color: black;
+            /* max-height: 450px; */
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="videoDisplay" class="column">
+        <video id="video" controls></video>
+    </div>
+    <div id="titlesDiv" class="column"></div>
+    <script src="/jquery-3.2.1.js"></script>
+    <script src="videos.js"></script>
+</body>
+
+</html>
