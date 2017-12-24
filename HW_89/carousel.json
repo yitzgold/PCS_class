@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Apple",
+        "url": "images/apple.jpg"
+    },
+    {
+        "title": "Banana",
+        "url": "images/banana.jpg"
+    },
+    {
+        "title": "Orange",
+        "url": "images/orange.jpg"
+    },
+    {
+        "title": "Peach",
+        "url": "images/peach.jpg"
+    },
+    {
+        "title": "Plum",
+        "url": "images/plum.jpg"
+    },
+    {
+        "title": "Strawberries",
+        "url": "images/strawberries.jpg"
+    },
+    {
+        "title": "Watermelon",
+        "url": "images/watermelon.jpg"
+    }
+]
