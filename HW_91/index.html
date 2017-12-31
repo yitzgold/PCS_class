@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #data {
+            width: 15%;
+            float: left;
+            text-align: center;
+        }
+
+        #map {
+            width: 85%;
+            height: 1000px;
+            float: left;
+            background-color: lightgray;
+        }
+
+        img {
+            margin: auto;
+            display: block;
+            padding-bottom: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="data">
+        Enter a location
+        <input id="location">
+        <button id="button">fetch</button>
+        <div id="images"></div>
+    </div>
+    <div id="map"></div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8ta3Ox7lBEOGgar-cFwO7WOvwTQPEswg"></script>
+    <script src="wiki-maps.js"></script>
+</body>
+
+
+</html>
