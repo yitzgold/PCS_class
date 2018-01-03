@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+        body,
+        #map {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        #map {
+            width: 75%;
+        }
+
+        #sidebar {
+            width: 25%;
+            height: 100%;
+            float: left;
+            overflow-y: auto;
+        }
+
+        #sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 4px;
+            cursor: pointer;
+        }
+
+        .controls {
+            text-align: center;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 6px;
+        }
+
+        #clear {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar">
+        <div class="controls">
+            Enter a search
+            <input id="search">
+            <br> select number of results
+            <input id="numOfResults" type="number" step="1" min="1" max="100" value="10">
+            <br>
+            <button id="fetch">fetch</button>
+            <br>
+            <button id="clear">clear results</button>
+        </div>
+        <ul></ul>
+    </div>
+    <div id="map"></div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8ta3Ox7lBEOGgar-cFwO7WOvwTQPEswg&libraries=drawing"></script>
+    <script src="wiki-maps.js"></script>
+</body>
+
+</html>
