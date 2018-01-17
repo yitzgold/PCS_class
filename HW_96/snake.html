@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+        body,
+        #theCanvas {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #theCanvas {
+            border: 1px solid black;
+        }
+
+        #gameover {
+            position: absolute;
+            display: none;
+            top: 50%;
+            left: 40%;
+            border: 3px solid rgb(243, 9, 9);
+            color: red;
+            text-align: center;
+            height: 125px;
+            width: 200px;
+        }
+
+        #score {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            border: 2px solid black;
+            color: maroon;
+        }
+
+        #newGame {
+            color: blue;
+            background-color: cadetblue;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="theCanvas"></canvas>
+    <div id="score"></div>
+    <div id="gameover">
+        <h1>Game Over!</h1>
+        <button id="newGame">new game</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="snake.js"></script>
+</body>
+
+</html>
