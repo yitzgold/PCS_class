@@ -1,0 +1,61 @@
+body,
+table {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#header {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: lightgreen;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+tr {
+    text-align: left;
+}
+
+tr {
+    border: 1px solid lightgreen;
+    height: 35px;
+}
+
+button,
+tbody {
+    cursor: pointer;
+}
+
+#buttonDiv {
+    text-align: center;
+}
+
+.controlsButton {
+    height: 40px;
+    background-color: lightgreen;
+}
+
+#postsContainer {
+    display: none;
+}
+
+#postsContainer>h2{
+    background-color: black;
+}
+
+#postsDiv>div {
+    margin: 20px 0;
+    padding: 0 10px 15px 10px;
+    border: 3px solid lightgreen;
+}
+
+h2,
+h3 {
+    color: lightgreen;
+    text-align: center;
+} 
