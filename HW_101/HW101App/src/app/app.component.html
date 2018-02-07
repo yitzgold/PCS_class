@@ -1,0 +1,17 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<h2>Choose a category</h2>
+
+<select [(ngModel)]="selectedCategory">
+  <option *ngFor="let category of categorys; let i = index;" [ngValue]=category>{{category.name}}</option>
+</select>
+
+<div *ngIf="selectedCategory">
+  <app-category *ngIf="selectedCategory.items; else elseBlock" [category]="selectedCategory"></app-category>
+  <ng-template #elseBlock>
+    <h3>This category has no items!</h3>
+  </ng-template>
+</div>

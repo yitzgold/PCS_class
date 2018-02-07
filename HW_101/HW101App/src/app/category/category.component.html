@@ -1,0 +1,7 @@
+<h2>Items</h2>
+<app-item *ngFor="let item of category.items" [item]="item"></app-item>
+<h4>Add an Item</h4>
+name
+<input #itemNameInput/> price
+<input #itemPriceInput/>
+<button (click)="addItem(itemNameInput.value, itemPriceInput.value)">Add Item</button>
