@@ -1,0 +1,12 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<ul *ngIf="showBlogs">
+  <li *ngFor="let blog of blogs; let i = index" (click)="show(i)">{{blog.name}}</li>
+</ul>
+<app-blog *ngIf="selectedBlog && !showBlogs" [blog]="selectedBlog"></app-blog>
+
+<button (click)="backToBlogs()">back to blogs</button>
