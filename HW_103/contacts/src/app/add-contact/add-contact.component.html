@@ -1,0 +1,15 @@
+<form #form="ngForm" (ngSubmit)="addContact(form.value)">
+  <label>Firstname:</label>
+  <input type="text" name="firstName" ngModel>
+
+  <label>Lastname:</label>
+  <input type="text" name="lastName" ngModel>
+
+  <label>email:</label>
+  <input type="email" name="email" ngModel>
+
+  <label>phone:</label>
+  <input type="phone" name="phone" ngModel>
+
+  <button type="submit">Submit</button>
+</form>
