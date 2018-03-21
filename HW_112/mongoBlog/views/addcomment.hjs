@@ -1,0 +1,9 @@
+<form method="post" id="addComment">
+    <label>Author
+        <input type="text" name="author" placeholder="Enter your Name" />
+    </label>
+    <label>Content
+        <textarea name="content" placeholder="Enter comment content"></textarea>
+    </label>
+    <button>Submit</button>
+</form>
